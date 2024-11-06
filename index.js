@@ -4,7 +4,12 @@ const port = 5000;
 
 // Define the route for the home page ('/')
 app.get('/', (req, res) => {
-  res.send('Hello World with voloum');
+  res.send('Hello World with volume');
+});
+
+// Define the route for the user page ('/user')
+app.get('/user', (req, res) => {
+  res.send('Hello World with sabbir');
 });
 
 // Start the server

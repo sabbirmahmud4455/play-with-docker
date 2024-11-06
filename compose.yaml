@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  img:
+    build: .
+    container_name: node-test-container-with-compose
+    ports:
+      - "5000:5000"
+    volumes:
+      - /home/sabbir/Desktop/node-with-docker:/app
+
